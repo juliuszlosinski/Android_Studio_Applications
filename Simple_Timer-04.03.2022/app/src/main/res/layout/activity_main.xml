@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#C4E5FF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <TextView
+            android:id="@+id/id_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="@string/label"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <TextView
+            android:id="@+id/id_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="@string/counter"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <Button
+            android:id="@+id/id_start_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:onClick="Start"
+            android:text="@string/start"
+            android:textSize="@dimen/text"
+            android:theme="@style/Theme.Material3.DynamicColors.Light"
+            app:cornerRadius="8dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <Button
+            app:cornerRadius="8dp"
+            android:id="@+id/id_stop_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Stop"
+            android:text="@string/stop"
+            android:theme="@style/Theme.Material3.DynamicColors.Light"
+            android:textSize="@dimen/text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <Button
+            app:cornerRadius="8dp"
+            android:id="@+id/id_restart_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Restart"
+            android:text="@string/restart"
+            android:theme="@style/Theme.Material3.DynamicColors.Light"
+            android:textSize="@dimen/text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="337dp"
+            app:srcCompat="@drawable/preview"
+            tools:ignore="ImageContrastCheck" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

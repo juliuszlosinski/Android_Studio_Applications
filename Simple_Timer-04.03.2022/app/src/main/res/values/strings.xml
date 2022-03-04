@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Timer</string>
+    <string name="title">Timer</string>
+    <string name="counter">0:00:00</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="restart">restart</string>
+    <string name="tit" />
+    <string name="label">Timer</string>
+</resources>
