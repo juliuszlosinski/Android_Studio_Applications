@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GCD_LCM_App</string>
+    <string name="GCD">GCD</string>
+    <string name="VA">Value of A:</string>
+    <string name="VB">Value of B:</string>
+    <string name="title">Calculator</string>
+    <string name="vLCM">LCM</string>
+    <string name="empty" />
+    <string name="result">Result:</string>
+</resources>
