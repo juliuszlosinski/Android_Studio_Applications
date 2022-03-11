@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">List of Students</string>
+    <string name="img_of_current_student">img_of_current_student</string>
+    <string name="osoba_def">Osoba: wiek</string>
+</resources>
