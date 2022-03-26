@@ -12,3 +12,8 @@ Applications created by using Android Studio and Java/ Kotlin.
 **3. List of Students - 11.03.2022:**
 
 ![image](https://user-images.githubusercontent.com/72278818/157850368-c8f0f074-f563-41da-b140-9f9c34a426fb.png)
+
+**4. Multiple Activities by using Intentions - 18/25.03.2022**
+
+![image](https://user-images.githubusercontent.com/72278818/160251227-f4eca793-3671-4799-95f2-7ac8783e2bd2.png)
+
