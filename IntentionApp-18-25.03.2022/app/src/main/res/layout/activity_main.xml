@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="@color/purple_200"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="719dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+
+                <TextView
+                    android:id="@+id/l_insert_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inserted data:"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_error"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/display_inserted_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:inputType="textPersonName"
+                    android:text="Empty"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/b_insert_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:background="@android:drawable/zoom_plate"
+                    android:text="Go to form!"
+                    android:textColor="@color/design_default_color_error"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/l_insert_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Insert address:"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_700"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/i_insert_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <Button
+                    android:id="@+id/b_insert_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:background="@android:drawable/zoom_plate"
+                    android:text="Open Map!"
+                    android:textColor="@color/purple_700"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/l_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current Photo:"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="143dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    tools:srcCompat="@android:drawable/btn_dialog" />
+
+                <Button
+                    android:id="@+id/b_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/zoom_plate"
+                    android:text="TAKE A PHOTO!"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/b_sms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/button_onoff_indicator_off"
+                    android:text="SMS" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/firstImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
+
+                <ImageView
+                    android:id="@+id/secondImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/dog" />
+
+                <ImageView
+                    android:id="@+id/thirdImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:layout_weight="1"
+                    app:srcCompat="?android:attr/fingerprintAuthDrawable" />
+
+                <ImageView
+                    android:id="@+id/fourthImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/dog" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
